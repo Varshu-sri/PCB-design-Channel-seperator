@@ -1,4 +1,4 @@
-Custom PCB design - Channel separator
+**Custom PCB design - Channel separator**
 Overview
 
 This project is a beginner-friendly custom PCB designed in Altium Designer for signal separator and distribution applications. The board provides a protected interface between external signal sources and downstream devices such as FPGA development boards, microcontrollers, and test equipment.
@@ -7,7 +7,7 @@ The design incorporates a fuse for basic protection, a linear voltage regulator 
 
 The project includes complete design documentation, including schematic files, PCB layout files, Gerber manufacturing outputs, and photographs of the assembled hardware.
 
-The board includes:
+**The board includes:**
 
 DC power input
 Fuse protection
@@ -16,10 +16,9 @@ Filter capacitors for power stability
 
 The regulator generates a stable logic supply voltage used by the signal processing circuitry.
 
-Signal Processing Section
+**Signal Processing Section**
 
 A quad 2-input AND gate IC is used as the signal routing stage.
-
 
 One input of every AND gate is permanently connected to the regulated supply voltage.
 
@@ -32,7 +31,7 @@ Output = Signal
 
 This configuration allows the logic device to act as an intermediary stage between external equipment and downstream electronics.
 
-Applications
+**Applications**
 
 The PCB can be used for:
 
@@ -43,7 +42,7 @@ Prototype hardware development
 Educational digital electronics experiments
 Logic-level signal conditioning
 
-PCB Design Highlights
+**PCB Design Highlights**
 Schematic Capture
 
 The schematic was developed in Altium Designer and includes:
@@ -69,7 +68,7 @@ After fabrication, the board was manually assembled using through-hole component
 
 Images of the populated board are included in the repository.
 
-Results
+**Results**
 
 The fabricated PCB was successfully assembled and verified.
 
@@ -92,7 +91,7 @@ Through-hole soldering and assembly
 Hardware validation and debugging
 Repository Contents
 
-This repository contains:
+**This repository contains:**
 
 Altium schematic files
 PCB layout files
