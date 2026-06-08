@@ -1,4 +1,5 @@
 **Custom PCB design - Channel separator**
+
 Overview
 
 This project is a beginner-friendly custom PCB designed in Altium Designer for signal separator and distribution applications. The board provides a protected interface between external signal sources and downstream devices such as FPGA development boards, microcontrollers, and test equipment.
