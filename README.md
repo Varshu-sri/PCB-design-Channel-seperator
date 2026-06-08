@@ -44,6 +44,7 @@ Educational digital electronics experiments
 Logic-level signal conditioning
 
 **PCB Design Highlights**
+
 Schematic Capture
 
 The schematic was developed in Altium Designer and includes:
