@@ -1,26 +1,29 @@
-**Custom PCB design - Channel separator**
+# Custom PCB Design – Channel Separator
 
-Overview
+## Overview
 
-This project is a beginner-friendly custom PCB designed in Altium Designer for signal separator and distribution applications. The board provides a protected interface between external signal sources and downstream devices such as FPGA development boards, microcontrollers, and test equipment.
+This project is a beginner-friendly custom PCB designed in Altium Designer for signal separation and distribution applications. The board provides a protected interface between external signal sources and downstream devices such as FPGA development boards, microcontrollers, and test equipment.
 
-The design incorporates a fuse for basic protection, a linear voltage regulator for power conditioning, and a quad AND gate IC used as a signal buffer/distribution stage. Rather than routing signals directly to sensitive hardware, the PCB provides an intermediate interface layer that helps isolate and organize signal connections.
+The design incorporates a fuse for basic protection, a linear voltage regulator for power conditioning, and a quad AND gate IC used as a signal routing stage. Rather than routing signals directly to sensitive hardware, the PCB provides an intermediate interface layer that helps isolate and organize signal connections.
 
 The project includes complete design documentation, including schematic files, PCB layout files, Gerber manufacturing outputs, and photographs of the assembled hardware.
 
-**The board includes:**
+---
 
-DC power input
+## Power Section
 
-Fuse protection
+The board includes:
 
-Linear voltage regulator
-
-Filter capacitors for power stability
+* DC power input
+* Fuse protection
+* Linear voltage regulator
+* Filter capacitors for power stability
 
 The regulator generates a stable logic supply voltage used by the signal processing circuitry.
 
-**Signal Processing Section**
+---
+
+## Signal Processing Section
 
 A quad 2-input AND gate IC is used as the signal routing stage.
 
@@ -30,102 +33,120 @@ The second input receives the external signal.
 
 Because one AND gate input remains HIGH, the output follows the incoming signal:
 
+```text
 Output = Signal × Logic High
-
 Output = Signal
+```
 
 This configuration allows the logic device to act as an intermediary stage between external equipment and downstream electronics.
 
-**Applications**
+---
+
+## Applications
 
 The PCB can be used for:
 
-FPGA GPIO interfacing, 
-Signal distribution, 
-Test bench signal routing, 
-Prototype hardware development, 
-Educational digital electronics experiments, 
-Logic-level signal conditioning, 
+* FPGA GPIO interfacing
+* Signal distribution
+* Test bench signal routing
+* Prototype hardware development
+* Educational digital electronics experiments
+* Logic-level signal conditioning
 
-**PCB Design Highlights**
+---
 
-Schematic Capture
+## PCB Design Highlights
+
+### Schematic Capture
 
 The schematic was developed in Altium Designer and includes:
 
-Power input stage, 
-Fuse protection, 
-Linear regulator circuit, 
-Quad AND gate interface, 
-Input connectors, 
-Output connectors, 
-PCB Layout
+* Power input stage
+* Fuse protection
+* Linear regulator circuit
+* Quad AND gate interface
+* Input connectors
+* Output connectors
+
+### PCB Layout
 
 The PCB layout was created with attention to:
 
-Component placement
+* Component placement
+* Signal routing
+* Manufacturability
+* Through-hole assembly
+* Ease of debugging and testing
 
-Signal routing
+---
 
-Manufacturability
-
-Through-hole assembly
-
-Ease of debugging and testing
-
-Assembly
+## Assembly
 
 After fabrication, the board was manually assembled using through-hole components.
 
-Images of the populated board are included in the repository.
+The assembled board includes:
 
-**Results**
+* Fuse
+* Linear voltage regulator
+* Quad AND gate IC
+* Input headers
+* Output headers
+* Decoupling capacitors
+
+Images of the populated PCB are included in this repository.
+
+---
+
+## Results
 
 The fabricated PCB was successfully assembled and verified.
 
 Testing confirmed:
 
-Proper voltage regulation
+* Proper voltage regulation
+* Correct signal propagation through all channels
+* Stable operation of the logic circuitry
+* Reliable signal routing between input and output headers
 
-Correct signal propagation through all channels
+---
 
-Stable operation of the logic circuitry
-
-Reliable signal routing between input and output headers
-
-**Learning Outcomes**
+## Learning Outcomes
 
 This project provided hands-on experience with:
 
-Electronic schematic design
+* Electronic schematic design
+* Component selection
+* PCB layout techniques
+* Gerber generation
+* PCB manufacturing workflow
+* Through-hole soldering and assembly
+* Hardware validation and debugging
 
-Component selection
+---
 
-PCB layout techniques
+## Repository Contents
 
-Gerber generation
+This repository contains:
 
-PCB manufacturing workflow
+* Altium schematic files
+* PCB layout files
+* Gerber manufacturing files
+* Assembly images
+* Design documentation
 
-Through-hole soldering and assembly
+---
 
-Hardware validation and debugging
+## Tools Used
 
-Repository Contents
+* Altium Designer
+* Through-hole electronic components
+* PCB fabrication services
+* Manual soldering and assembly tools
 
-**This repository contains:**
+---
 
-Altium schematic files
+## Author
 
-PCB layout files
-
-Gerber manufacturing files
-
-Assembly images
-
-Design documentation
-
-Author
-
-Varsha Sri
+**Varsha Sri**
 FPGA Engineer | Embedded Systems Engineer | PCB Design Enthusiast
+
