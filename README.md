@@ -11,8 +11,11 @@ The project includes complete design documentation, including schematic files, P
 **The board includes:**
 
 DC power input
+
 Fuse protection
+
 Linear voltage regulator
+
 Filter capacitors for power stability
 
 The regulator generates a stable logic supply voltage used by the signal processing circuitry.
@@ -28,6 +31,7 @@ The second input receives the external signal.
 Because one AND gate input remains HIGH, the output follows the incoming signal:
 
 Output = Signal × Logic High
+
 Output = Signal
 
 This configuration allows the logic device to act as an intermediary stage between external equipment and downstream electronics.
@@ -36,12 +40,12 @@ This configuration allows the logic device to act as an intermediary stage betwe
 
 The PCB can be used for:
 
-FPGA GPIO interfacing
-Signal distribution
-Test bench signal routing
-Prototype hardware development
-Educational digital electronics experiments
-Logic-level signal conditioning
+FPGA GPIO interfacing, 
+Signal distribution, 
+Test bench signal routing, 
+Prototype hardware development, 
+Educational digital electronics experiments, 
+Logic-level signal conditioning, 
 
 **PCB Design Highlights**
 
@@ -49,21 +53,26 @@ Schematic Capture
 
 The schematic was developed in Altium Designer and includes:
 
-Power input stage
-Fuse protection
-Linear regulator circuit
-Quad AND gate interface
-Input connectors
-Output connectors
+Power input stage, 
+Fuse protection, 
+Linear regulator circuit, 
+Quad AND gate interface, 
+Input connectors, 
+Output connectors, 
 PCB Layout
 
 The PCB layout was created with attention to:
 
 Component placement
+
 Signal routing
+
 Manufacturability
+
 Through-hole assembly
+
 Ease of debugging and testing
+
 Assembly
 
 After fabrication, the board was manually assembled using through-hole components.
@@ -77,29 +86,45 @@ The fabricated PCB was successfully assembled and verified.
 Testing confirmed:
 
 Proper voltage regulation
+
 Correct signal propagation through all channels
+
 Stable operation of the logic circuitry
+
 Reliable signal routing between input and output headers
-Learning Outcomes
+
+**Learning Outcomes**
 
 This project provided hands-on experience with:
 
 Electronic schematic design
+
 Component selection
+
 PCB layout techniques
+
 Gerber generation
+
 PCB manufacturing workflow
+
 Through-hole soldering and assembly
+
 Hardware validation and debugging
+
 Repository Contents
 
 **This repository contains:**
 
 Altium schematic files
+
 PCB layout files
+
 Gerber manufacturing files
+
 Assembly images
+
 Design documentation
+
 Author
 
 Varsha Sri
